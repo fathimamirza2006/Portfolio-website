@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(32, 7, 56); */
+    background-image: linear-gradient(to right, rgb(101, 8, 135), black);
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Playwrite AU QLD", cursive;
+}
+
+nav ul {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(250, 215, 246);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+
+.hero {
+    background-image: linear-gradient(to right, rgb(176, 236, 236), rgb(238, 112, 238));
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    align-items: center;
+    font-family: "Dancing Script", cursive;
+
+
+
+
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-left .one {
+    font-size: 60px;
+    color: purple;
+    font-weight: bold;
+
+}
+
+.hero-left .two {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hero-right img {
+    border-radius: 14px;
+}
+
+.button-container {
+    padding: 9px 0;
+}
+
+.btn {
+    background-image: linear-gradient(to right, rgb(103, 29, 132), grey);
+    color: white;
+    padding: 7px 9px;
+    margin: 0 2px;
+    border: 2px solid rgb(168, 30, 210);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+/* Option B: Change to a different gradient on hover (Smoother transition) */
+.btn:hover {
+    background-image: linear-gradient(to right, rgb(15, 8, 1), rgb(50, 50, 50));
+}
+
+
+.project {
+    display: flex;
+    align-items: center;
+    font-family: "Dancing Script", cursive;
+    background-image: linear-gradient(to right, rgb(238, 112, 238), rgb(176, 236, 236));
+    border-top: 2px solid rgb(255, 218, 245);
+    padding: 22px 100px;
+
+
+}
+
+.project-image img {
+    width: 29.5vw;
+    margin: 35px;
+    border-radius: 20px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.project-info .text {
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px 0;
+
+
+}
+
+.project-info p {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: rgb(157, 30, 216);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+}
+
+@media screen and (max-width:950px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 12px
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .project {
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .hero-left .one {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-left .two {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project-image img {
+        width: 80vw;
+        margin: 14px 35px;
+    }
+
+    .project-info {
+        padding: 15px 23px;
+    }
+}
